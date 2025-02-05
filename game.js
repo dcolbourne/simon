@@ -60,10 +60,14 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over");
         },200);
         $("h1").text("Game Over, Press Any Key to Restart");
-        userClickedPattern = [];
-        firstKeypress = false;
-        level = 0;
-        gamePattern = [];
+        startOver();
     } 
+}
+
+function startOver() {
+    userClickedPattern = [];
+    firstKeypress = false;
+    level = 0;
+    gamePattern = [];
 }
 
